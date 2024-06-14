@@ -1,0 +1,18 @@
+.{
+    .name = "libgc",
+
+    .version = "0.0.0",
+
+    .dependencies = .{
+        .bdwgc = .{
+            .url = "https://github.com/ivmai/bdwgc/archive/98852332d32c5d2d50dfbc4cd5172431112e0516.tar.gz",
+            .hash = "1220812e6a8310aa63de6838018e09f5ab31f81729fa11704a897f1b74d8921e14aa",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}

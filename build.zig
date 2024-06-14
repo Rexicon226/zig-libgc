@@ -36,6 +36,8 @@ pub fn build(b: *std.Build) void {
 
     const module = b.addModule("gc", .{
         .root_source_file = b.path("src/gc.zig"),
+        .optimize = optimize,
+        .target = target,
     });
     module.linkLibrary(gc);
 

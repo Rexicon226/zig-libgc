@@ -34,7 +34,7 @@ pub fn build(b: *std.Build) void {
         b.installArtifact(lib);
     }
 
-    const module = b.createModule(.{
+    const module = b.addModule("gc", .{
         .root_source_file = b.path("src/gc.zig"),
     });
     module.linkLibrary(gc);
